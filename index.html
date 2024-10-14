@@ -3,64 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Professional Portfolio</title>
+    <title>Contact Us - Your Company Name</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Digital Marketer | Data Analyst</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Get in touch with us using the information below.</p>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a passionate web developer and digital marketer with a keen interest in data analytics. I strive to create engaging and effective digital solutions that meet client needs.</p>
+    <section class="contact-info">
+        <div class="container">
+            <h2>Our Contact Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>Your Company Address, City, Country</p>
+                </div>
+                <div class="info-item">
+                    <h3>Working Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-        <div class="project">
-            <h3>Project Title 3</h3>
-            <p>Description of project 3.</p>
+    <section class="contact-form">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Digital Marketing</li>
-            <li>Data Analytics</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+    <section class="map">
+        <div class="container">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_MAP_LINK" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
